@@ -1,0 +1,68 @@
+.p__container{
+    height: 65vh;
+    background-image:linear-gradient(to right, #4A3CAD, #6B5FC7);
+}
+
+.p__wrapper {
+    display: flex;
+    width: 80vw;
+    margin: 0 auto;
+    padding-top: 5%;
+}
+
+.p__img, .p__text-cta {
+    flex-basis: 50%;
+}
+
+.p__img {
+    text-align: center;
+}
+
+.p__text-cta p {
+    font-size: 2rem;
+}
+
+.p__text-cta {
+    padding: 0 10%;
+}
+
+.p__btn {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 16rem;
+    border: 3px #fff solid;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 8%;
+    transition: all .25s ease-out;
+    text-align: center;
+  }
+  
+.p__btn:hover {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 16rem;
+    border-radius: 5px;
+    background-color: #fff;
+    border: 3px #fff solid;
+    color: #4A3CAD;
+    font-weight: 600;
+}
+
+@media(max-width: 1401px) {
+    .p__wrapper {
+        padding: 5%;
+        flex-direction: column;
+    }
+    .p__container {
+        height: auto;
+    }
+    img.react-reveal {
+        width: 80%;
+    }
+}

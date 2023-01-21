@@ -1,0 +1,131 @@
+h3 {
+    font-family: 'Poppins';
+    font-size: 2rem;
+}
+
+.f-m__container {
+    width: 100%;
+}
+
+.f-m__wrapper {
+    display: flex;
+    height: 650px;
+}
+
+iframe {
+    border: 0px;
+}
+
+.iframe__section {
+    flex-basis: 50%;
+}
+
+.form-section {
+    display: flex;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    background-image:url("../img/background.png"), linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(248, 249, 249, 1));
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+input {
+    height: 2rem;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    background: transparent;
+}
+
+input:focus-visible {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    background: #fff;
+}
+
+
+textarea:focus-visible {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    outline: 0px;
+    border: 0px;
+    border-radius: 5px;
+    background: #fff;
+
+}
+
+input, textarea {
+    margin: 4% 0;
+    padding: 1%;
+    font-family: 'Poppins';
+}
+
+form h3 {
+    padding-bottom: 1%;;
+}
+
+.form__names {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form__names input {
+    width: 20em;
+}
+
+button {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 12rem;
+    border: 3px #4A3CAD solid;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    color: #4A3CAD;
+    padding: .5rem 0rem;
+    transition: all .25s ease-out;
+    text-align: center;
+  }
+  
+ button:hover {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 12rem;
+    border-radius: 5px;
+    background-color: #4A3CAD;
+    border: 3px #4A3CAD solid;
+    color: #fff;
+    font-weight: 600;
+  }
+
+  @media(max-width: 1352px) {
+    .f-m__wrapper {
+        height: auto;
+        flex-direction: column;
+    }
+    form {
+        padding: 5% 0;
+    }
+  }
+
+  
+  @media(max-width: 877px) {
+    .form__names {
+        flex-direction: column;
+    }
+    .form__names input {
+        width: 100%;
+    }
+  }
+

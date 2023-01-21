@@ -1,0 +1,153 @@
+
+
+
+.f__container {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(248, 249, 249, 1));  
+    width: 100vw;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 10%;
+  }
+  
+  .f__text, .f__img{
+    flex-basis: 50%;
+  }
+  
+  /* h1, p {
+    font-family: 'Poppins', sans-serif;
+  } */
+  
+  h1 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .f__wrapper{
+    display: flex;
+    height: 80vh;
+    padding-top: 10%;
+  }
+  
+  .f__text{
+    height: 100%;
+    padding: 5% 10% 0 10%;
+  }
+  
+  .f__text p {
+    font-size: 1.8rem;
+  }
+  
+  .f__text > *{
+    margin-bottom: 5%;
+  }
+  
+  .q__btn {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 16rem;
+    border: 3px #4A3CAD solid;
+    border-radius: 5px;
+    background-color: #4A3CAD;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding: 1rem 3rem;
+    margin-top: 8%;
+    transition: all .25s ease-out;
+    text-align: center;
+  }
+  
+  .q__btn:hover {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    width: 16rem;
+    border-radius: 5px;
+    background-color: transparent;
+    border: 3px #4A3CAD solid;
+    color: #4A3CAD;
+    font-weight: 600;
+  }
+  
+  .f__img {
+    text-align: center;
+  }
+  
+  .arrow-down {
+    position: relative;
+    bottom: 5%;
+    left: 50%;
+  }
+
+  .arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: rotate(0deg);
+    z-index: 998;
+}
+
+.arrow span {
+    display: block;
+    width: 1.5vw;
+    height: 1.5vw;
+    border-bottom: 5px solid #999;
+    border-right: 5px solid #999;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+
+
+@media(max-width: 1570px) {
+  .f__container {
+    padding: 0;
+  }
+}
+@media(max-width: 1274px) {
+  .f__wrapper {
+    flex-direction: column;
+  }
+  .f__container {
+    height: 100vh;
+  }
+  .arrow {
+    display: none;
+  }
+  .f__img img {
+    width: 80%;
+  }
+}
+@media (max-width: 900px){
+.f__container {
+    height: 90vh;
+}
+}@media(max-width: 394px){
+  h1 {
+      font-size: 2.3rem;
+  }
+}
